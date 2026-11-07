@@ -1,1 +1,120 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="690" viewBox="0 0 1000 690"><rect width="1000" height="690" fill="#f8fafc"/><style>text{font:20px sans-serif;fill:#0f172a}.small{font-size:15px}.panel{fill:#fff;stroke:#2563eb;stroke-width:2}</style><text x="30" y="35">Wireframe Portfolio CV — Desktop (sơ đồ thiết kế)</text><rect class="panel" x="30" y="55" width="940" height="65" rx="9"/><text x="55" y="95">Logo / Họ tên</text><text x="550" y="95">Giới thiệu | Kỹ năng | Dự án | Liên hệ</text><rect class="panel" x="30" y="135" width="615" height="160" rx="9"/><text x="55" y="180">HERO: Tên, mô tả, CTA</text><rect class="panel" x="660" y="135" width="310" height="160" rx="9"/><text x="690" y="215">Ảnh đại diện</text><text x="30" y="333">KỸ NĂNG</text><rect class="panel" x="30" y="350" width="300" height="80" rx="9"/><rect class="panel" x="350" y="350" width="300" height="80" rx="9"/><rect class="panel" x="670" y="350" width="300" height="80" rx="9"/><text class="small" x="55" y="394">HTML/CSS</text><text class="small" x="375" y="394">Responsive</text><text class="small" x="695" y="394">Công cụ</text><text x="30" y="470">DỰ ÁN</text><rect class="panel" x="30" y="485" width="220" height="95" rx="9"/><rect class="panel" x="270" y="485" width="220" height="95" rx="9"/><rect class="panel" x="510" y="485" width="220" height="95" rx="9"/><rect class="panel" x="750" y="485" width="220" height="95" rx="9"/><text class="small" x="50" y="530">Landing</text><text class="small" x="290" y="530">Todo demo</text><text class="small" x="530" y="530">Weather</text><text class="small" x="770" y="530">Blog</text><rect class="panel" x="30" y="600" width="940" height="65" rx="9"/><text x="55" y="640">LIÊN HỆ / FOOTER</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1260" viewBox="0 0 1400 1260" style="max-width:100%;height:auto" role="img" aria-labelledby="title description">
+  <title id="title">Wireframe responsive Portfolio CV FIT4014 A3</title>
+  <desc id="description">Sơ đồ bố cục desktop 1440 px, tablet 768 px và mobile 375 px, thể hiện điều hướng, giới thiệu, kỹ năng, dự án và liên hệ.</desc>
+  <style>
+    text { font-family: Arial, sans-serif; fill: #0f172a; }
+    .title { font-size: 28px; font-weight: 700; }
+    .subtitle { font-size: 15px; fill: #475569; }
+    .frame-title { font-size: 20px; font-weight: 700; }
+    .label { font-size: 14px; font-weight: 600; }
+    .small { font-size: 12px; }
+    .note { font-size: 14px; fill: #334155; }
+    .panel { fill: #ffffff; stroke: #2563eb; stroke-width: 2; }
+    .soft { fill: #eff6ff; stroke: #93c5fd; stroke-width: 1.5; }
+    .screen { fill: #f8fafc; stroke: #94a3b8; stroke-width: 1.5; }
+    .dashed { fill: #f8fafc; stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 6 4; }
+  </style>
+
+  <rect width="1400" height="1260" fill="#f1f5f9"/>
+  <text class="title" x="30" y="42">Wireframe Portfolio CV — FIT4014 A3</text>
+  <text class="subtitle" x="30" y="70">Sơ đồ cấu trúc theo breakpoint CSS; không phải screenshot hay bằng chứng kiểm thử.</text>
+
+  <!-- Desktop frame -->
+  <rect class="panel" x="30" y="95" width="1340" height="465" rx="14"/>
+  <text class="frame-title" x="52" y="128">Desktop — viewport mục tiêu 1440 px (CSS: ≥1280 px)</text>
+  <rect class="screen" x="52" y="145" width="1296" height="396" rx="8"/>
+  <rect class="soft" x="68" y="158" width="1264" height="42" rx="6"/>
+  <text class="label" x="82" y="184">HEADER · Logo / Họ tên</text>
+  <text class="small" x="850" y="184">Giới thiệu | Kỹ năng | Dự án | Liên hệ</text>
+
+  <rect class="soft" x="68" y="207" width="805" height="78" rx="6"/>
+  <text class="label" x="84" y="237">HERO · Tên, vai trò, mô tả</text>
+  <text class="small" x="84" y="264">CTA: Khám phá dự án · Liên hệ</text>
+  <rect class="soft" x="887" y="207" width="445" height="78" rx="6"/>
+  <text class="label" x="1032" y="254">Ảnh đại diện</text>
+
+  <text class="label" x="68" y="305">KỸ NĂNG · 3 cột</text>
+  <rect class="soft" x="68" y="314" width="407" height="48" rx="6"/>
+  <rect class="soft" x="486" y="314" width="407" height="48" rx="6"/>
+  <rect class="soft" x="904" y="314" width="428" height="48" rx="6"/>
+  <text class="small" x="84" y="344">Giao diện</text>
+  <text class="small" x="502" y="344">Responsive &amp; UX</text>
+  <text class="small" x="920" y="344">Công cụ &amp; quy trình</text>
+
+  <text class="label" x="68" y="385">DỰ ÁN · Grid 3 cột; thẻ thứ 4 xuống hàng tiếp theo</text>
+  <rect class="soft" x="68" y="394" width="407" height="38" rx="6"/>
+  <rect class="soft" x="486" y="394" width="407" height="38" rx="6"/>
+  <rect class="soft" x="904" y="394" width="428" height="38" rx="6"/>
+  <text class="small" x="84" y="418">01 Landing Page</text>
+  <text class="small" x="502" y="418">02 Todo · có demo</text>
+  <text class="small" x="920" y="418">03 Weather Dashboard</text>
+  <rect class="soft" x="68" y="439" width="407" height="32" rx="6"/>
+  <text class="small" x="84" y="460">04 Blog · chi tiết mở bằng &lt;details&gt;</text>
+  <text class="label" x="68" y="491">LIÊN HỆ · 2 cột ở màn hình rộng</text>
+  <rect class="dashed" x="68" y="499" width="615" height="34" rx="6"/>
+  <rect class="dashed" x="695" y="499" width="637" height="34" rx="6"/>
+  <text class="small" x="84" y="522">Giới thiệu / thông tin liên hệ</text>
+  <text class="small" x="711" y="522">Form · validation → mailto</text>
+  <text class="small" x="68" y="538">FOOTER · tên / liên kết lên đầu trang</text>
+
+  <!-- Tablet frame -->
+  <rect class="panel" x="30" y="585" width="760" height="520" rx="14"/>
+  <text class="frame-title" x="52" y="619">Tablet — viewport mục tiêu 768 px</text>
+  <text class="subtitle" x="52" y="642">Hero 2 cột · kỹ năng 3 cột · dự án 2 cột · liên hệ xếp dọc (≤850 px)</text>
+  <rect class="screen" x="52" y="656" width="716" height="425" rx="8"/>
+  <rect class="soft" x="68" y="670" width="684" height="48" rx="6"/>
+  <text class="small" x="82" y="691">HEADER · Logo / Họ tên</text>
+  <text class="small" x="82" y="708">Nav co giãn / có thể xuống dòng</text>
+  <rect class="soft" x="68" y="729" width="420" height="83" rx="6"/>
+  <text class="small" x="82" y="757">HERO · nội dung + CTA</text>
+  <rect class="soft" x="500" y="729" width="252" height="83" rx="6"/>
+  <text class="small" x="559" y="775">Ảnh đại diện</text>
+  <text class="label" x="68" y="840">KỸ NĂNG · 3 cột</text>
+  <rect class="soft" x="68" y="850" width="216" height="46" rx="6"/>
+  <rect class="soft" x="296" y="850" width="216" height="46" rx="6"/>
+  <rect class="soft" x="524" y="850" width="228" height="46" rx="6"/>
+  <text class="small" x="80" y="879">Giao diện</text>
+  <text class="small" x="308" y="879">Responsive</text>
+  <text class="small" x="536" y="879">Công cụ</text>
+  <text class="label" x="68" y="922">DỰ ÁN · 2 cột</text>
+  <rect class="soft" x="68" y="932" width="330" height="44" rx="6"/>
+  <rect class="soft" x="410" y="932" width="342" height="44" rx="6"/>
+  <rect class="soft" x="68" y="982" width="330" height="44" rx="6"/>
+  <rect class="soft" x="410" y="982" width="342" height="44" rx="6"/>
+  <text class="small" x="80" y="959">01 Landing</text>
+  <text class="small" x="422" y="959">02 Todo</text>
+  <text class="small" x="80" y="1009">03 Weather</text>
+  <text class="small" x="422" y="1009">04 Blog</text>
+  <text class="small" x="68" y="1057">LIÊN HỆ: nội dung và form xếp dọc; form 2 cột đầu vào.</text>
+  <text class="small" x="68" y="1075">FOOTER · tên / liên kết lên đầu trang</text>
+
+  <!-- Mobile frame -->
+  <rect class="panel" x="810" y="585" width="560" height="520" rx="14"/>
+  <text class="frame-title" x="832" y="619">Mobile — viewport mục tiêu 375 px</text>
+  <text class="subtitle" x="832" y="642">Một cột · nav cuộn ngang · form một cột (≤520 px)</text>
+  <rect class="screen" x="832" y="656" width="516" height="425" rx="8"/>
+  <rect class="soft" x="848" y="670" width="484" height="48" rx="6"/>
+  <text class="small" x="862" y="691">HEADER · Logo / Họ tên</text>
+  <text class="small" x="862" y="708">Nav: Giới thiệu → Liên hệ (cuộn ngang)</text>
+  <rect class="soft" x="848" y="729" width="484" height="85" rx="6"/>
+  <text class="small" x="862" y="753">HERO · Tên / vai trò / CTA</text>
+  <text class="small" x="862" y="776">Ảnh nằm dưới phần giới thiệu</text>
+  <text class="label" x="848" y="840">KỸ NĂNG · 1 cột</text>
+  <rect class="soft" x="848" y="850" width="484" height="38" rx="6"/>
+  <text class="small" x="862" y="875">Các nhóm kỹ năng xếp dọc</text>
+  <text class="label" x="848" y="914">DỰ ÁN · 1 cột</text>
+  <rect class="soft" x="848" y="924" width="484" height="38" rx="6"/>
+  <text class="small" x="862" y="949">Thẻ dự án + summary mở chi tiết</text>
+  <rect class="soft" x="848" y="968" width="484" height="38" rx="6"/>
+  <text class="small" x="862" y="993">Các thẻ tiếp theo xếp dọc</text>
+  <text class="small" x="848" y="1034">LIÊN HỆ / form: mỗi trường một hàng</text>
+  <text class="small" x="848" y="1055">CTA và nút gửi có vùng thao tác rõ</text>
+  <text class="small" x="848" y="1075">FOOTER · tên / liên kết lên đầu trang</text>
+
+  <!-- Interaction and traceability notes -->
+  <rect class="panel" x="30" y="1125" width="1340" height="125" rx="12"/>
+  <text class="frame-title" x="52" y="1158">Ghi chú tương tác, accessibility và đối chiếu</text>
+  <text class="note" x="52" y="1185">• Tab đầu tiên: skip link; focus-visible cần nhìn thấy. Details dùng Enter/Space; điều hướng bằng anchor.</text>
+  <text class="note" x="52" y="1210">• Todo mở từ thẻ 02; CRUD/LocalStorage. Form kiểm tra trường rồi mở mailto; không gửi thư trên server.</text>
+  <text class="note" x="52" y="1235">• Breakpoint/luồng trong sơ đồ là thiết kế theo source; xác nhận thực tế tại test_report.md (T04–T06, T11–T15).</text>
+</svg>

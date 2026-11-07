@@ -7,7 +7,7 @@ Portfolio cá nhân cho bài kiểm tra A3 — FIT4014, giới thiệu hành tr�
 - **Portfolio:** [dainenvn.github.io/khoanganhnen](https://dainenvn.github.io/khoanganhnen/)
 - **Todo List:** [Mở demo Todo](https://dainenvn.github.io/khoanganhnen/demos/todo.html)
 
-> Đã kiểm tra các URL trên GitHub Pages trả về thành công ngày 07/11/2026. Bản đang publish khác mã nguồn cục bộ ở phần mô tả mở đầu của trang; các tài nguyên CSS, ảnh và Todo demo đều truy cập được. Cần publish lại để nội dung portfolio trực tuyến đồng bộ với mã nguồn mới nhất.
+> README trước đó ghi nhận các URL GitHub Pages truy cập được ngày 07/11/2026 và bản publish có phần mô tả mở đầu khác mã nguồn cục bộ. Đây là ghi nhận có sẵn, chưa được kiểm tra lại trong lượt hoàn thiện tài liệu này; hãy xác minh URL và đồng bộ bản publish trước khi nộp.
 
 ## Mục tiêu
 
@@ -52,7 +52,16 @@ Thực hành xây dựng portfolio tĩnh có cấu trúc rõ ràng, dễ điều
 ├── demos/
 │   ├── todo.html           # Giao diện demo Todo
 │   └── todo.js             # Xử lý Todo và localStorage
-├── docs/                   # Tài liệu yêu cầu, wireframe và kịch bản demo
+├── docs/
+│   ├── REQUIREMENTS_AND_DESIGN.md # Phân tích yêu cầu và thiết kế
+│   ├── RUBRIC_GAP_ANALYSIS.md # Đối chiếu TC1–TC7 theo rubric chính thức
+│   ├── REFERENCES.md         # Nguồn tham khảo
+│   ├── WIREFRAME.svg        # Wireframe responsive: desktop/tablet/mobile
+│   ├── DEMO_7_PHUT.md       # Kịch bản thuyết trình 7 phút
+│   ├── AI_LOG.md            # Khai báo sử dụng AI
+│   ├── EVIDENCE_INDEX.md    # Chỉ mục minh chứng E01–E09
+│   └── RELEASE_NOTES.md     # Ghi chú phiên bản
+├── test_report.md           # Smoke test local một phần; cần hoàn thiện kết quả/minh chứng
 ├── CHANGELOG.md            # Nhật ký thay đổi
 └── README.md               # Tài liệu dự án
 ```
@@ -93,7 +102,7 @@ Nhấn `Ctrl+C` trong terminal để dừng server.
 - Trên tablet hoặc điện thoại, mở cùng đường dẫn Live Demo trong trình duyệt của thiết bị.
 - Khi kiểm tra tại chỗ, dùng chế độ responsive/device toolbar của DevTools để xem các kích thước màn hình khác nhau.
 
-Website dùng đường dẫn tương đối như `./assets/css/styles.css` và `./demos/todo.html`, nên các tài nguyên hoạt động dưới đường dẫn project site của GitHub Pages. Các URL chính của trang và demo đã được kiểm tra truy cập; việc kiểm thử thực tế trên từng thiết bị/trình duyệt vẫn cần thực hiện riêng.
+Website dùng đường dẫn tương đối như `./assets/css/styles.css` và `./demos/todo.html`, phù hợp với đường dẫn project site của GitHub Pages. README trước đây ghi nhận đã kiểm tra URL chính; cần chạy lại và ghi kết quả mới trong [báo cáo kiểm thử](test_report.md). Việc kiểm thử từng thiết bị/trình duyệt cũng cần thực hiện riêng.
 
 ## Description cho GitHub Repository
 
@@ -105,3 +114,12 @@ Website dùng đường dẫn tương đối như `./assets/css/styles.css` và 
 - Form liên hệ cần ứng dụng email mặc định; không có backend gửi thư.
 - Ba dự án ngoài Todo là nội dung giới thiệu ý tưởng/bài thực hành, chưa có demo hoàn chỉnh trong repository.
 - Chưa có số liệu Lighthouse, báo cáo validator hoặc kết quả kiểm thử đa thiết bị được xác nhận trong README này.
+
+## Tài liệu A3
+
+- [Phân tích yêu cầu và thiết kế](docs/REQUIREMENTS_AND_DESIGN.md), [đối chiếu rubric TC1–TC7](docs/RUBRIC_GAP_ANALYSIS.md), [nguồn tham khảo](docs/REFERENCES.md) và [wireframe responsive](docs/WIREFRAME.svg).
+- [Kịch bản demo 7 phút](docs/DEMO_7_PHUT.md).
+- [Báo cáo kiểm thử](test_report.md) (một số smoke test local; phần lớn kiểm thử/minh chứng còn thiếu) và [chỉ mục minh chứng E01–E09](docs/EVIDENCE_INDEX.md).
+- [Khai báo sử dụng AI](docs/AI_LOG.md) và [ghi chú phiên bản](docs/RELEASE_NOTES.md).
+
+> Bản rubric chính thức được người học cung cấp dưới dạng DOCX trong thư mục Downloads. Ma trận là đánh giá hỗ trợ theo file đó, không phải điểm số do giảng viên chấm. Wireframe có ba frame desktop/tablet/mobile nhưng cần được rà với source và yêu cầu; xem TC2 trong ma trận.

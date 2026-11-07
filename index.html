@@ -258,7 +258,15 @@
     const name = form.elements.name.value.trim();
     const email = form.elements.email.value.trim();
     const message = form.elements.message.value.trim();
-    if (!name || !email || !message) return;
+    if (!name || !email || !message) {
+      const invalidField = !name ? form.elements.name : !email ? form.elements.email : form.elements.message;
+      invalidField.setCustomValidity('Vui lòng không chỉ nhập khoảng trắng.');
+      invalidField.reportValidity();
+      invalidField.addEventListener('input', function clearCustomValidity() {
+        invalidField.setCustomValidity('');
+      }, { once: true });
+      return;
+    }
     const subject = encodeURIComponent('Liên hệ từ Portfolio - ' + name);
     const body = encodeURIComponent('Họ tên: ' + name + '\nEmail: ' + email + '\n\nNội dung:\n' + message);
     window.location.href = 'mailto:daiba4887@gmail.com?subject=' + subject + '&body=' + body;
