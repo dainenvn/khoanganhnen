@@ -1,159 +1,107 @@
-# Portfolio CV — Khoàng Văn Nên
+# Portfolio A3 — Khoàng Văn Nên
 
-Website portfolio cá nhân giới thiệu Khoàng Văn Nên, sinh viên Công nghệ thông tin định hướng Frontend. Dự án được xây dựng bằng HTML, CSS và JavaScript thuần; không cần cài thư viện hay dịch vụ backend để xem website.
+Portfolio cá nhân cho bài kiểm tra A3 — FIT4014, giới thiệu hành trình học tập và định hướng Frontend của sinh viên năm nhất ngành Công nghệ thông tin tại Trường Đại học Đại Nam. Website tập trung vào giao diện responsive, cấu trúc semantic và một demo Todo tương tác.
 
-## Mục lục
+## Live Demo
 
-- [Chức năng](#chức-năng)
-- [Công nghệ sử dụng](#công-nghệ-sử-dụng)
-- [Yêu cầu môi trường](#yêu-cầu-môi-trường)
-- [Cài đặt và chạy thử](#cài-đặt-và-chạy-thử)
-- [Cấu hình](#cấu-hình)
-- [Chạy bằng Docker](#chạy-bằng-docker)
-- [Thông tin liên hệ](#thông-tin-liên-hệ)
+- **Portfolio:** [dainenvn.github.io/khoanganhnen](https://dainenvn.github.io/khoanganhnen/)
+- **Todo List:** [Mở demo Todo](https://dainenvn.github.io/khoanganhnen/demos/todo.html)
 
-## Chức năng
+> Đã kiểm tra các URL trên GitHub Pages trả về thành công ngày 07/11/2026. Bản đang publish khác mã nguồn cục bộ ở phần mô tả mở đầu của trang; các tài nguyên CSS, ảnh và Todo demo đều truy cập được. Cần publish lại để nội dung portfolio trực tuyến đồng bộ với mã nguồn mới nhất.
 
-- Giới thiệu cá nhân, định hướng nghề nghiệp và kỹ năng.
-- Điều hướng tới các phần Giới thiệu, Kỹ năng, Dự án và Liên hệ.
-- Trình bày bốn ý tưởng/bài thực hành: Landing Page Sản Phẩm, ứng dụng Todo List, Weather Dashboard và Blog Cá Nhân.
-- Cung cấp demo Todo List độc lập tại `demos/todo.html`, hỗ trợ thêm, sửa, đánh dấu hoàn thành, xóa và lưu công việc trong `localStorage` của trình duyệt.
-- Giao diện thích ứng với điện thoại, máy tính bảng và máy tính; có hỗ trợ thao tác bàn phím.
-- Biểu mẫu liên hệ mở ứng dụng email mặc định để soạn thư; website không gửi dữ liệu qua máy chủ.
+## Mục tiêu
 
-> Weather Dashboard, Landing Page và Blog được giới thiệu là ý tưởng/bài thực hành trong portfolio; không nên hiểu là các ứng dụng đã triển khai đầy đủ. Demo chạy được trong repository là Todo List.
+Thực hành xây dựng portfolio tĩnh có cấu trúc rõ ràng, dễ điều hướng và sử dụng trên nhiều kích thước màn hình; đồng thời áp dụng HTML, CSS và JavaScript nền tảng vào một sản phẩm có thể xem trực tuyến.
 
-## Công nghệ sử dụng
+## Thông tin sinh viên
 
-- HTML5 semantic.
-- CSS3, Flexbox, CSS Grid và media queries.
-- JavaScript ES6+ và DOM.
-- `localStorage` để lưu dữ liệu Todo trên trình duyệt hiện tại.
-- Google Fonts: Plus Jakarta Sans và JetBrains Mono (cần Internet để tải; có font hệ thống thay thế).
-- Docker tùy chọn, dùng Nginx để phục vụ website tĩnh.
+| Thông tin | Nội dung |
+|---|---|
+| Họ tên | Khoàng Văn Nên |
+| Mã sinh viên | 2071020140 |
+| Lớp | CNTT 20-01 |
+| Trường | Đại học Đại Nam |
+| Học phần | FIT4014 |
+| Định hướng | Frontend Developer |
 
-## Yêu cầu môi trường
+## Tính năng hiện có
 
-### Mở trực tiếp
+- Các khu vực Giới thiệu, Kỹ năng, Dự án và Liên hệ; điều hướng bằng liên kết neo.
+- Bốn thẻ trình bày ý tưởng/bài thực hành, có phần chi tiết mở rộng.
+- Giao diện responsive dùng Flexbox, CSS Grid và media queries; có skip link, focus bàn phím và hỗ trợ `prefers-reduced-motion`.
+- Demo Todo List tại `demos/todo.html`: thêm, sửa, đánh dấu hoàn thành, xóa và lưu dữ liệu bằng `localStorage` trong trình duyệt hiện tại.
+- Biểu mẫu liên hệ kiểm tra trường bắt buộc rồi mở ứng dụng email mặc định qua `mailto:`; website không gửi thư qua máy chủ.
 
-Trình duyệt hiện đại như Chrome, Firefox, Edge hoặc Safari. Mở `index.html` có thể xem portfolio, nhưng nên dùng máy chủ HTTP cục bộ để kiểm tra đầy đủ điều hướng và demo Todo.
+> Todo List là demo tương tác có trong mã nguồn. Landing Page, Weather Dashboard và Blog được giới thiệu như ý tưởng/bài thực hành; không mô tả chúng là ứng dụng hoàn chỉnh. Weather Dashboard hiện chưa kết nối API thời tiết.
 
-### Chạy trên máy tính
+## Công nghệ
 
-- Python 3 (khuyến nghị) hoặc một HTTP server tĩnh tương đương.
-- Không cần Node.js, npm, cơ sở dữ liệu hay API key.
+- HTML5, CSS3, JavaScript thuần (ES6+).
+- Flexbox, CSS Grid, media queries và các thuộc tính accessibility.
+- Google Fonts (Plus Jakarta Sans, JetBrains Mono); cần Internet để tải font, có font hệ thống thay thế.
+- GitHub Pages để lưu trữ website tĩnh.
 
-### Chạy bằng Docker
+## Cấu trúc dự án
 
-- Docker Engine trên Linux hoặc Docker Desktop trên Windows/macOS.
-- Có kết nối Internet lần đầu để tải image `nginx:alpine`.
-
-## Cài đặt và chạy thử
-
-### 1. Lấy mã nguồn
-
-Nếu đã có thư mục dự án trên máy, mở terminal tại thư mục chứa `index.html`. Hoặc clone repository:
-
-```bash
-git clone https://github.com/dainenvn/khoanganhnen.git
-cd khoanganhnen
+```text
+.
+├── index.html              # Trang portfolio chính và biểu mẫu liên hệ
+├── assets/
+│   ├── css/styles.css      # Giao diện và responsive
+│   └── img/avatar.jpg      # Ảnh đại diện
+├── demos/
+│   ├── todo.html           # Giao diện demo Todo
+│   └── todo.js             # Xử lý Todo và localStorage
+├── docs/                   # Tài liệu yêu cầu, wireframe và kịch bản demo
+├── CHANGELOG.md            # Nhật ký thay đổi
+└── README.md               # Tài liệu dự án
 ```
 
-### 2. Chạy máy chủ HTTP cục bộ
+## Chạy thử trên máy
 
-Chọn hướng dẫn theo hệ điều hành. Các lệnh chạy server cần được giữ mở trong terminal.
+Không cần cài Node.js, npm, backend hay cơ sở dữ liệu. Có thể mở `index.html` trực tiếp, nhưng nên chạy HTTP server cục bộ:
 
-#### Windows
+1. Clone repository và chuyển vào thư mục dự án:
 
-Mở PowerShell hoặc Command Prompt tại thư mục dự án:
+   ```bash
+   git clone https://github.com/dainenvn/khoanganhnen.git
+   cd khoanganhnen
+   ```
 
-```powershell
-py -m http.server 8000
-```
+2. Khởi chạy server bằng Python 3:
 
-Nếu lệnh `py` không có nhưng đã cài Python:
+   **Windows (PowerShell/Command Prompt):**
+   ```powershell
+   py -m http.server 8000
+   ```
+   Nếu không có lệnh `py`, dùng `python -m http.server 8000`.
 
-```powershell
-python -m http.server 8000
-```
+   **macOS / Linux:**
+   ```bash
+   python3 -m http.server 8000
+   ```
 
-#### macOS
+3. Mở các địa chỉ:
+   - Portfolio: <http://localhost:8000/>
+   - Todo List: <http://localhost:8000/demos/todo.html>
 
-Mở Terminal, chuyển tới thư mục dự án rồi chạy:
+Nhấn `Ctrl+C` trong terminal để dừng server.
 
-```bash
-python3 -m http.server 8000
-```
+## Xem trên máy tính, tablet và điện thoại
 
-#### Linux
+- Trên máy tính, mở Live Demo bằng trình duyệt hiện đại.
+- Trên tablet hoặc điện thoại, mở cùng đường dẫn Live Demo trong trình duyệt của thiết bị.
+- Khi kiểm tra tại chỗ, dùng chế độ responsive/device toolbar của DevTools để xem các kích thước màn hình khác nhau.
 
-Mở terminal tại thư mục dự án rồi chạy:
+Website dùng đường dẫn tương đối như `./assets/css/styles.css` và `./demos/todo.html`, nên các tài nguyên hoạt động dưới đường dẫn project site của GitHub Pages. Các URL chính của trang và demo đã được kiểm tra truy cập; việc kiểm thử thực tế trên từng thiết bị/trình duyệt vẫn cần thực hiện riêng.
 
-```bash
-python3 -m http.server 8000
-```
+## Description cho GitHub Repository
 
-Nếu hệ thống chưa cài Python 3, hãy cài Python 3 bằng trình quản lý gói của bản phân phối Linux hoặc dùng Docker theo hướng dẫn bên dưới.
+> Portfolio A3 môn FIT4014 của Khoàng Văn Nên — sinh viên CNTT Đại học Đại Nam, định hướng Frontend. Xây dựng bằng HTML, CSS, JavaScript; có giao diện responsive và demo Todo List.
 
-#### Mở website và demo
+## Giới hạn
 
-Khi server đã chạy, mở các địa chỉ sau trong trình duyệt:
-
-- Portfolio: <http://localhost:8000/>
-- Demo Todo List: <http://localhost:8000/demos/todo.html>
-
-Để dừng server, nhấn `Ctrl+C` trong terminal đang chạy server. Có thể thay `8000` bằng cổng khác nếu cổng này đang được sử dụng; khi đó hãy dùng cổng mới trong địa chỉ trình duyệt.
-
-## Cấu hình
-
-Dự án không cần file cấu hình hay biến môi trường để chạy.
-
-- **Nội dung portfolio:** chỉnh sửa `index.html`.
-- **Giao diện:** chỉnh sửa `assets/css/styles.css`.
-- **Ảnh đại diện:** thay `assets/img/avatar.jpg` (nên giữ tên file hoặc cập nhật đường dẫn ảnh trong `index.html`).
-- **Demo Todo:** mã giao diện ở `demos/todo.html`, xử lý ở `demos/todo.js`.
-- **Lưu Todo:** dữ liệu được lưu riêng trong `localStorage` của trình duyệt. Dữ liệu không đồng bộ giữa thiết bị hoặc trình duyệt; xóa dữ liệu trang web trong trình duyệt có thể làm mất danh sách.
-- **Font chữ:** Google Fonts tải từ Internet; khi ngoại tuyến, trang dùng font hệ thống dự phòng.
-- **Biểu mẫu liên hệ:** mở ứng dụng email mặc định với địa chỉ người nhận được thiết lập trong `index.html`. Biểu mẫu không có backend và không tự gửi thư.
-
-## Chạy bằng Docker
-
-Không cần tạo Dockerfile. Từ thư mục dự án, dùng image Nginx để phục vụ nội dung tĩnh ở cổng `8080`.
-
-### macOS và Linux
-
-```bash
-docker run --rm --name portfolio -p 8080:80 \
-  -v "$PWD:/usr/share/nginx/html:ro" nginx:alpine
-```
-
-### Windows PowerShell
-
-Chạy tại thư mục dự án:
-
-```powershell
-docker run --rm --name portfolio -p 8080:80 `
-  -v "${PWD}:/usr/share/nginx/html:ro" nginx:alpine
-```
-
-### Windows Command Prompt
-
-Chạy tại thư mục dự án:
-
-```cmd
-docker run --rm --name portfolio -p 8080:80 -v "%cd%:/usr/share/nginx/html:ro" nginx:alpine
-```
-
-Sau khi container khởi động, mở:
-
-- Portfolio: <http://localhost:8080/>
-- Demo Todo List: <http://localhost:8080/demos/todo.html>
-
-Nhấn `Ctrl+C` để dừng và xóa container. Thư mục được mount chỉ đọc; mã nguồn không bị thay đổi bởi container. Nếu cổng `8080` đang bận, đổi phần `8080:80` thành cổng trống khác, ví dụ `8081:80`.
-
-## Thông tin liên hệ
-
-- **Tên:** Khoàng Văn Nên
-- **Email:** [daiba4887@gmail.com](mailto:daiba4887@gmail.com)
-- **Điện thoại:** [+84 906 019 416](tel:+84906019416)
-- **Khu vực:** Lai Châu, Việt Nam
+- Dữ liệu Todo chỉ lưu trên trình duyệt hiện tại, không đồng bộ giữa thiết bị.
+- Form liên hệ cần ứng dụng email mặc định; không có backend gửi thư.
+- Ba dự án ngoài Todo là nội dung giới thiệu ý tưởng/bài thực hành, chưa có demo hoàn chỉnh trong repository.
+- Chưa có số liệu Lighthouse, báo cáo validator hoặc kết quả kiểm thử đa thiết bị được xác nhận trong README này.
